@@ -12,7 +12,7 @@ def main():
     aren't jpg type, these files will still be renamed to jpg files.
     :return:
     """
-    main_dir = 'C:/Users/argda/PycharmProjects/RenameFilesInBulk/photos/'
+    main_dir = 'C:/Users/blahblahblahblah/PycharmProjects/RenameFilesInBulk/photos/'
     sub_dirs = [dir_name for dir_name in os.listdir(main_dir) if os.path.isdir(os.path.join(main_dir, dir_name))]
     new_sub_dirs = []
     ignore_dirs = ['.idea', 'env']
