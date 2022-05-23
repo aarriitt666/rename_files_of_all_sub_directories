@@ -3,9 +3,12 @@ import os
 
 def main():
     """
-    Be very careful in inputting correct path for main_dir - because this program will rename files recursively.
-    With wrong path, your file sytem will get corrupted.  This method is going to rename all files within the
-    main directory path that got entered as main_dir to .jpg files.  This means, if the files within the main_dir
+    Be very careful in inputting path for main_dir - because this program will rename files recursively, but
+    only one level deep.  So make sure the path of directory you want this script to run on is the intended one.
+
+    For example: this script will rename all files including directories in any sub directory of
+    the main directory -- such as files 1, 2, 3 in photos/a and files 4, 5, 6 in photos/b will be renamed to a_1.jpg,
+    a_2.jpg, a_3.jpg in photos/a and b_4.jpg, b_5.jpg, b_6.jpg in photos/b.  Caution:  If the files within the main_dir
     aren't jpg type, these files will still be renamed to jpg files.
     :return:
     """
